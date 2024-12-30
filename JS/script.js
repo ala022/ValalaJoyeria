@@ -376,6 +376,27 @@ function gestionarFormularioContacto () {
         }
     });
 };
+document.addEventListener("DOMContentLoaded", () => {
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+
+    if (prevBtn && nextBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            resetAutoSlide(); // Reinicia el temporizador de transición automática
+        });
+
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            resetAutoSlide(); // Reinicia el temporizador de transición automática
+        });
+    } else {
+        console.log('Los botones del carrusel no están presentes.');
+    }
+});
+
+
+
 
 // Funciones del carrusel
 const slides = document.querySelector('.slides');
