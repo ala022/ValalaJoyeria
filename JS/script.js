@@ -1,6 +1,7 @@
 let productos = [];
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 let reseñas = JSON.parse(localStorage.getItem("reseñas")) || [];
+let emptyCartButton = document.getElementById("empty-cart");
 
 const productosContainer = document.getElementById("productos");
 const contadorCarrito = document.getElementById("contador-carrito");
