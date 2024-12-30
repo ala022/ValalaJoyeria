@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "nombre": "Collar de Oro",
+      "descripcion": "Hermoso collar de oro puro.",
+      "precio": 1500000,
+      "imagen": "IMAGENES/collar_oro.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Anillo de Plata",
+      "descripcion": "Elegante anillo de plata.",
+      "precio": 1000000,
+      "imagen": "IMAGENES/anillo_plata.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Pulsera de Perlas",
+      "descripcion": "Pulsera hecha con perlas naturales.",
+      "precio": 500000,
+      "imagen": "IMAGENES/pulsera_perlas.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Collar de Diamantes",
+        "descripcion": "Collar de diamantes delicados.",
+        "precio": 1200000,
+        "imagen": "IMAGENES/collar_diamante.jpg"
+      }
+  ]
+  

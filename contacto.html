@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Valala</title>
+    <meta name="description" content="Contáctanos para obtener más información sobre nuestros productos o realizar consultas sobre pedidos. Estamos aquí para ayudarte.">
+    <meta name="author" content="Equipo Valala">
+    <meta name="keywords" content="contacto, atención al cliente, preguntas, ayuda, Valala">
+    <meta property="og:title" content="Contacto - Valala">
+    <meta property="og:description" content="¿Tienes preguntas? Contáctanos para obtener más información sobre nuestros productos y servicios.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contacto - Valala">
+    <meta name="twitter:description" content="Contáctanos para resolver tus dudas y obtener asistencia sobre nuestros productos y tu cuenta.">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contáctanos</h1>
+        <nav aria-label="Menú principal de navegación">
+            <ul>
+                <li><a href="index.html" title="Página principal">Inicio</a></li>
+                <li><a href="productos.html" title="Ver productos">Productos</a></li>
+                <li><a href="reseñas.html" title="Leer reseñas de clientes">Reseñas</a></li>
+                <li><a href="contacto.html" title="Formulario de contacto">Contacto</a></li>
+                <li><a href="carrito.html" title="Ver el carrito de compras">Carrito (<span id="contador-carrito">0</span>)</a></li>
+                <li><a href="login.html" title="Iniciar sesión">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+   <main>
+        <section id="contacto-container">
+            <div id="formulario-contacto">
+                <h2>Envíanos un mensaje</h2>
+                <form id="contactForm" action="https://formspree.io/f/xpwwrzqy" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        required 
+                        minlength="2" 
+                        maxlength="50" 
+                        pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" 
+                        title="El nombre solo debe contener letras.">
+
+                    <label for="email">Correo electrónico:</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required 
+                        maxlength="100">
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea 
+                        id="mensaje" 
+                        name="mensaje" 
+                        rows="5" 
+                        required 
+                        minlength="10" 
+                        maxlength="500" 
+                        title="El mensaje debe contener entre 10 y 500 caracteres.">
+                    </textarea>
+
+                    <!-- Campo honeypot para proteger contra bots -->
+                    <input type="text" name="_honeypot" style="display:none;">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <button type="submit">Enviar</button>
+                </form>
+
+                <!-- Mensaje de confirmación oculto que se muestra tras el envío -->
+                <div id="confirmationMessage" style="display:none;">
+                    <h3>¡Gracias por tu mensaje!</h3>
+                    <p>Nos pondremos en contacto contigo pronto.</p>
+                    <button id="closeConfirmation">OK</button>
+                </div>
+            </div>
+            
+            <!-- Mapa de Google -->
+            <div id="google-map">
+                <h2>Visítanos</h2>
+                <p>Estamos ubicados en:</p>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.23949906467!2d-58.43329845000001!3d-34.615823750000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires!5e0!3m2!1sen!2sar!4v1735427868295!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Valala. Todos los derechos reservados.</p>
+        <p>Síguenos en: 
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </p>
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+</html>

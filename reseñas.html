@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseñas - Valala</title>
+    <meta name="description" content="Lee las reseñas de nuestros clientes sobre la joyería Valala. Conoce las opiniones de quienes ya han comprado nuestros productos.">
+    <meta name="author" content="Equipo Valala">
+    <meta name="keywords" content="reseñas, testimonios, joyería, opiniones, productos, Valala">
+    <meta property="og:title" content="Reseñas - Valala">
+    <meta property="og:description" content="Descubre lo que nuestros clientes dicen sobre la calidad de nuestras joyas y la experiencia de compra.">
+    <meta property="og:image" content="URL-de-imagen-generica.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reseñas - Valala">
+    <meta name="twitter:description" content="Conoce las opiniones de nuestros clientes sobre la joyería Valala.">
+    <meta name="twitter:image" content="URL-de-imagen-generica.jpg"> <!-- Enlace de ejemplo -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+            <a href="index.html">
+            </a>
+        <h1>Reseñas de nuestros clientes</h1>
+        <nav aria-label="Menú principal de navegación">
+            <ul>
+                <li><a href="index.html" title="Página principal">Inicio</a></li>
+                <li><a href="productos.html" title="Ver productos">Productos</a></li>
+                <li><a href="reseñas.html" title="Leer reseñas de clientes">Reseñas</a></li>
+                <li><a href="contacto.html" title="Formulario de contacto">Contacto</a></li>
+                <li><a href="carrito.html" title="Ver el carrito de compras">Carrito (<span id="contador-carrito">0</span>)</a></li>
+                <li><a href="login.html" title="Iniciar sesión">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="reseñas">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="reseñas-container" id="reseñas-container">
+                <div class="reseña">
+                    <p>"La calidad de las joyas es impecable, muy satisfecho con mi compra." - Ana</p>
+                </div>
+                <div class="reseña">
+                    <p>"Un regalo perfecto, llegó en tiempo y con un empaque precioso." - Pedro</p>
+                </div>
+                <div class="reseña">
+                    <p>"Recomiendo totalmente, diseño único y atención excelente." - María</p>
+                </div>
+            </div>
+            <div id="agregar-reseña">
+                <h3>Deja tu opinión</h3>
+                <form id="reseñasForm">
+                    <label for="nombre-reseña">Nombre:</label>
+                    <input 
+                        type="text" 
+                        id="nombre-reseña" 
+                        name="nombre" 
+                        required 
+                        minlength="2" 
+                        maxlength="50" 
+                        pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]+" 
+                        title="El nombre solo debe contener letras.">
+                    <label for="email-reseña">Correo electrónico:</label>
+                    <input 
+                        type="email" 
+                        id="email-reseña" 
+                        name="email" 
+                        required 
+                        maxlength="100">
+                    <label for="reseña">Reseña:</label>
+                    <textarea 
+                        id="reseña" 
+                        name="mensaje" 
+                        rows="5" 
+                        required 
+                        minlength="10" 
+                        maxlength="500" 
+                        title="La reseña debe contener entre 10 y 500 caracteres.">
+                    </textarea>
+                
+                    <!-- Campo honeypot para proteger contra bots -->
+                    <input type="text" name="_honeypot" style="display:none;">
+                    <input type="hidden" name="_captcha" value="false">
+                
+                    <!-- Botón de envío -->
+                    <button type="submit">Enviar</button>
+                </form>
+                <!-- Mensaje de error para validaciones -->
+                <div id="mensaje-error" style="display:none;"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Valala. Todos los derechos reservados.</p>
+        <p>Síguenos en: 
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> | 
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </p>
+    </footer>
+    <script src="JS/script.js"></script>
+</body>
+</html>
