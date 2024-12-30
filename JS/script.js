@@ -28,11 +28,6 @@ function inicializarAplicacion() {
     if (emptyCartButton) {
         emptyCartButton.addEventListener("click", vaciarCarrito);
     }
-    // Verificar si el botón de vaciar carrito existe antes de agregar el eventListener
-    const emptyCartButton = document.getElementById("empty-cart");
-    if (emptyCartButton) {
-        emptyCartButton.addEventListener("click", vaciarCarrito);
-    }
 }
 
 // Cargar productos desde un JSON
