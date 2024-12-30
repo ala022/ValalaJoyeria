@@ -24,7 +24,7 @@ function inicializarAplicacion() {
     actualizarContadorCarrito();
     renderizarCarrito();
 
-    // Asignar eventos al botón de vaciar carrito
+   // Verificar si el botón de vaciar carrito existe antes de agregar el eventListener
     if (emptyCartButton) {
         emptyCartButton.addEventListener("click", vaciarCarrito);
     }
