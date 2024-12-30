@@ -2,11 +2,12 @@
     --color-primary: #d4af37; 
     --color-secondary: #ffffff; 
     --color-accent: #333333; 
-    --font-family: 'Poppins', sans-serif;
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: 'Playfair Display', serif;
   }
 
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-secondary);
     background: linear-gradient(to right, #cdf5d0, #fef7fa); 
     display: flex;
     flex-direction: column;
@@ -24,6 +25,8 @@ body {
       transform: scale(1); 
     }
   }
+
+/* Encabezados */
 h1 {
     font-size: 2.5rem; 
 }
@@ -67,6 +70,7 @@ h3 {
     }
 }
 
+*/ Header */
 header {
     background-color: #000000;
     padding: 20px;
@@ -76,7 +80,7 @@ header {
     z-index: 100; 
 }
 
-
+/* Main */
 main {
     border-top: 3px solid #ffd700; 
     padding-top: 20px; 
@@ -189,6 +193,7 @@ form button:hover {
     color: #ffd700;
 }
 
+/* Navegación */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -209,6 +214,7 @@ nav ul li a:hover {
     color: #2c6e49; 
 }
 
+/* Slider */
 .slider-section {
     margin-top: 0px; 
     padding: 0;
